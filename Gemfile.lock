@@ -129,17 +129,11 @@ GEM
     error_highlight (0.6.0)
     erubi (1.12.0)
     execjs (2.9.1)
-    faraday (2.8.1)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
     ffi (1.16.3)
     font-awesome-sass (6.5.1)
       sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    hashie (5.0.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     i18n (1.14.1)
@@ -155,10 +149,7 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jwt (2.7.1)
-    kindle-highlights (2.0.1)
-      activesupport
-      mechanize (>= 2.7.5)
+    kindle_highlights (0.1.0)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -186,7 +177,6 @@ GEM
     mini_mime (1.1.5)
     minitest (5.20.0)
     msgpack (1.7.2)
-    multi_xml (0.6.0)
     mutex_m (0.2.0)
     net-http-digest_auth (1.4.1)
     net-http-persistent (4.0.2)
@@ -201,45 +191,25 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.16.0-aarch64-linux)
-      racc (~> 1.4)
     nokogiri (1.16.0-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.0-x86_64-linux)
-      racc (~> 1.4)
-    oauth2 (2.0.9)
-      faraday (>= 0.17.3, < 3.0)
-      jwt (>= 1.0, < 3.0)
-      multi_xml (~> 0.5)
-      rack (>= 1.2, < 4)
-      snaky_hash (~> 2.0)
-      version_gem (~> 1.1)
-    omniauth (1.9.2)
-      hashie (>= 3.4.6)
-      rack (>= 1.6.2, < 3)
-    omniauth-amazon (1.0.1)
-      omniauth (~> 1.0)
-      omniauth-oauth2 (~> 1.1)
-    omniauth-oauth2 (1.7.3)
-      oauth2 (>= 1.4, < 3)
-      omniauth (>= 1.9, < 3)
     orm_adapter (0.5.0)
     pg (1.5.4)
     popper_js (2.11.8)
     psych (5.1.2)
       stringio
     public_suffix (5.0.4)
-    puma (6.4.0)
+    puma (6.4.1)
       nio4r (~> 2.0)
     racc (1.7.3)
-    rack (2.2.8)
-    rack-session (1.0.2)
-      rack (< 3)
+    rack (3.0.8)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
-    rackup (1.0.0)
-      rack (< 3)
-      webrick
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
     rails (7.1.2)
       actioncable (= 7.1.2)
       actionmailbox (= 7.1.2)
@@ -298,9 +268,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    snaky_hash (2.0.1)
-      hashie
-      version_gem (~> 1.1, >= 1.1.1)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -320,7 +287,6 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    version_gem (1.1.3)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.1)
@@ -339,9 +305,7 @@ GEM
     zeitwerk (2.6.12)
 
 PLATFORMS
-  aarch64-linux
   arm64-darwin-22
-  x86_64-linux
 
 DEPENDENCIES
   autoprefixer-rails
@@ -355,9 +319,8 @@ DEPENDENCIES
   font-awesome-sass (~> 6.1)
   importmap-rails
   jbuilder
-  kindle-highlights
-  omniauth
-  omniauth-amazon
+  kindle_highlights
+  mechanize
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.2)

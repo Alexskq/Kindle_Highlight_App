@@ -51,9 +51,10 @@ gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails"
 
-gem 'omniauth'
-gem 'omniauth-amazon'
-gem 'kindle-highlights'
+gem 'kindle_highlights'
+gem 'mechanize'
+
+
 
 group :development, :test do
   gem "dotenv-rails"
