@@ -55,6 +55,7 @@ gem 'kindle_highlights'
 gem 'mechanize'
 gem 'omniauth-amazon'
 gem 'multi_json'
+gem "omniauth-rails_csrf_protection"
 
 
 
