@@ -53,6 +53,9 @@ gem "sassc-rails"
 
 gem 'kindle_highlights'
 gem 'mechanize'
+gem 'omniauth-amazon'
+gem 'multi_json'
+
 
 
 

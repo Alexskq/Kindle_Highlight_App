@@ -1,6 +1,5 @@
-# config/initializers/kindle_highlights.rb
 
-
-require_relative '../../lib/kindle_highlights_wrapper'
-
-KINDLE = KindleHighlightsWrapper.initialize_client unless Rails.env.production?
+# KindleHighlights.configure do |config|
+#     config.amazon_username = ENV['AMAZON_USERNAME']
+#     config.amazon_password = ENV['AMAZON_PASSWORD']
+#   end
