@@ -54,6 +54,7 @@ gem "sassc-rails"
 gem 'omniauth'
 gem 'omniauth-amazon'
 gem 'kindle-highlights'
+gem 'multi_json', '~> 1.15'
 
 group :development, :test do
   gem "dotenv-rails"
