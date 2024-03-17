@@ -50,10 +50,12 @@ gem "autoprefixer-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
 gem "sassc-rails"
+gem 'multi_json', '~> 1.15'
 
 gem 'omniauth'
 gem 'omniauth-amazon'
-gem 'kindle-highlights'
+# gem 'kindle-highlights'
+gem 'omniauth-amazon-sp'
 
 group :development, :test do
   gem "dotenv-rails"
